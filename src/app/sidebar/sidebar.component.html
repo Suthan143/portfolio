@@ -1,0 +1,14 @@
+<button class="menu-btn" (click)="toggleSidebar()">⋮</button>  <!-- three dots -->
+
+<div class="overlay" *ngIf="isOpen" (click)="toggleSidebar()"></div>
+
+<div class="sidebar" [class.open]="isOpen">
+  <nav>
+    <ul>
+      <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
+      <li><a routerLink="/projects" (click)="toggleSidebar()">Projects</a></li>
+      <li><a routerLink="/about" (click)="toggleSidebar()">About</a></li>
+      <li><a routerLink="/contact" (click)="toggleSidebar()">Contact</a></li>
+    </ul>
+  </nav>
+</div>

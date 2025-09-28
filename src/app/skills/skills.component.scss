@@ -1,0 +1,17 @@
+.skill-badge {
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  cursor: default;
+
+  &:hover {
+    background: linear-gradient(90deg, #ff5722, #e91e63);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+}
+
+.heading-gradient {
+  background: linear-gradient(90deg, #ff5722, #e91e63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

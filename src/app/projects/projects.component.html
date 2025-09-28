@@ -1,0 +1,62 @@
+<section id="projects" class="container">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h4 class="fw-bolder heading-gradient mb-0 text-uppercase">💻 Projects</h4>
+  </div>
+
+  <div class="row gx-5 justify-content-center">
+    <div class="col-md-12" *ngFor="let project of projects">
+      <div class="card shadow rounded border-0 mb-4 project-card">
+        <div class="card-body">
+
+          <!-- Role + Company -->
+          <div class="fs-5 fw-bolder text-primary-emphasis d-flex align-items-center gap-2">
+            <i class="bi bi-briefcase text-secondary"></i>
+            {{ project.role }} — {{ project.company }}
+          </div>
+
+          <!-- Duration -->
+          <div class="small text-muted mb-2 d-flex align-items-center gap-2">
+            <i class="bi bi-calendar"></i>
+            {{ project.duration }}
+          </div>
+
+          <!-- Title -->
+          <p class="small mb-3">
+            <strong>📌 Project Title :</strong> {{ project.title }}
+          </p>
+
+          <!-- Description -->
+          <div class="mb-3">
+            <li class="small text-muted list-group-item" *ngFor="let desc of project.description">
+              {{ desc }}
+            </li>
+          </div>
+
+          <!-- Tech stack -->
+          <p class="small mb-1"><strong>Frontend :</strong> {{ project.frontend }}</p>
+          <p class="small mb-1"><strong>Backend :</strong> {{ project.backend }}</p>
+          <p class="small mb-1"><strong>Database :</strong> {{ project.database }}</p>
+          <p class="small mb-1"><strong>Deployment :</strong> {{ project.deployment }}</p>
+          <p class="small mb-1"><strong>Architecture :</strong> {{ project.architecture }}</p>
+          <p class="small mb-1"><strong>Version Control :</strong> {{ project.versionControl }}</p>
+          <p class="small mb-3"><strong>Security :</strong> {{ project.security }}</p>
+
+          <!-- Badges -->
+          <div class="d-flex flex-wrap mb-3 gap-2 small align-items-center">
+            <i class="bi bi-tools me-1 text-muted"></i>
+            <span class="badge bg-light border text-dark" *ngFor="let skill of project.skills">
+              {{ skill }}
+            </span>
+          </div>
+
+          <!-- Project Link -->
+          <a *ngIf="project.link" target="_blank" rel="noopener noreferrer"
+             [href]="project.link"
+             class="btn btn-sm btn-outline-primary d-inline-flex align-items-center gap-1">
+            View Project <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

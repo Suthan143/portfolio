@@ -1,0 +1,28 @@
+<section id="education" class="container">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h4 class="fw-bolder heading-gradient mb-0 text-uppercase">🎓 Education</h4>
+  </div>
+
+  <div *ngFor="let edu of educationList" class="card shadow border-0 rounded mb-3 education-card">
+    <div class="card-body p-3">
+      <div class="fs-5 heading-gradient fw-bolder d-flex align-items-center gap-2">
+        <i class="bi bi-mortarboard-fill text-primary"></i> {{ edu.degree }}
+      </div>
+
+      <div class="small fw-bolder d-flex align-items-center gap-1">
+        <i class="bi bi-building text-secondary"></i>
+        <a class="text-decoration-none" [href]="edu.link" target="_blank">
+          {{ edu.university }}
+          <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </div>
+
+      <div class="small text-muted d-flex align-items-center gap-2 mt-1">
+        <i class="bi bi-calendar-event"></i> {{ edu.duration }}
+        <span class="d-flex align-items-center gap-1 ms-3">
+          <i class="bi bi-geo-alt"></i> {{ edu.location }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

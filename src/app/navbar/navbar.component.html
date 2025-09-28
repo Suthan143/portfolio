@@ -1,0 +1,53 @@
+<nav #navbar class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+  <div class="container-fluid">
+    <!--<a class="navbar-brand" href="#">
+    <div class="d-flex align-items-center gap-2 px-2">
+      <div class="logo-img">
+        <img alt="Your Name"
+             width="80"
+             height="80"
+             src="assets/profile.jpg"
+             style="object-fit: cover;" />
+      </div>
+      <div class="d-flex flex-column">
+        <div class="fw-bolder heading-gradient">Suthan Appusamy</div>
+        <div class="badge background-gradient mb-2 fs-6">Full Stack Developer</div>
+      </div>
+    </div>
+  </a>-->
+    <div class="d-flex flex-column">
+      <div class="fw-bolder heading-gradient" style="font-size:20px;">Suthan Appusamy</div>
+      <!--<div class="badge background-gradient mb-2 fs-6">Full Stack Developer</div>-->
+    </div>
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon small"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ms-auto" id="navbar-content">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder navbar-ul">
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-link" (click)="scrollTo('about')">👨‍💻 About</a>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-link" (click)="scrollTo('experience')">💼 Experience</a>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-link" (click)="scrollTo('education')">🎓 Education</a>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-link" (click)="scrollTo('projects')">💻 Projects</a>
+        </li>
+        <li class="nav-item navbar-li">
+          <a class="nav-link navbar-link" (click)="scrollTo('skills')">🛠 Skills</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

@@ -1,0 +1,28 @@
+.heading-dark {
+  color: #222;
+}
+
+.heading-gradient {
+  background: linear-gradient(90deg, #ff6f61, #6a11cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-gradient-we {
+  background: linear-gradient(90deg, #6a11cb, #ff6f61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.profile {
+  display: inline-block;
+}

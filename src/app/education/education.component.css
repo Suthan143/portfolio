@@ -1,0 +1,16 @@
+.education-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  &:hover
+
+{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+}
+
+.heading-gradient {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

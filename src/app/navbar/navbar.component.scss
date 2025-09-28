@@ -1,0 +1,17 @@
+/*.heading-gradient {
+  background: linear-gradient(90deg, #ff6f61, #6a11cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-gradient {
+  background: linear-gradient(90deg, #6a11cb, #ff6f61);
+  color: #fff;
+}
+
+.navbar-link {
+  &:hover {
+    color: #6a11cb !important; // adjust color
+  }
+}
+*/

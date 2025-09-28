@@ -1,0 +1,32 @@
+<section id="experience" class="container">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h4 class="fw-bolder heading-gradient mb-0 text-uppercase">💼 Experience</h4>
+  </div>
+
+  <div *ngFor="let exp of experiences" class="card shadow border-0 rounded mb-3 experience-card">
+    <div class="card-body p-3">
+      <!-- Role -->
+      <div class="fs-5 fw-bolder text-primary-emphasis d-flex align-items-center gap-2">
+        <i class="bi bi-briefcase-fill text-secondary"></i> {{ exp.role }}
+      </div>
+
+      <!-- Company + Location -->
+      <div class="small fw-bolder mb-1 d-flex align-items-center gap-2">
+        <a class="text-decoration-none text-dark" [href]="exp.link" target="_blank">
+          {{ exp.company }}
+          <i class="bi bi-box-arrow-up-right ms-1"></i>
+        </a>
+        <span class="text-muted d-flex align-items-center gap-1">
+          <i class="bi bi-geo-alt"></i> {{ exp.location }}
+        </span>
+      </div>
+
+      <!-- Duration -->
+      <div class="small text-muted d-flex align-items-center gap-2">
+        <i class="bi bi-calendar-event"></i>
+        {{ exp.duration }}
+        <span *ngIf="exp.current" class="badge bg-success ms-2">Present</span>
+      </div>
+    </div>
+  </div>
+</section>
